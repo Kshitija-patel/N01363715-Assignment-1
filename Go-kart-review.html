@@ -47,23 +47,23 @@
 
         <h1>Go Kart Review</h1>
         <section>
-            Name:
-            <input type="text" id="name" name="name" />
+            <label>Name:</label>
+            <input type="text" id="reviewer_name" name="name" />
         </section>
         <section>
-            E-mail:
-            <input type="email" id="mail" name="mail" />
+            <label>E-mail:</label>
+            <input type="email" id="reviewer_mail" name="mail" />
         </section>
         <section>
-            Overall Ratings:
-            <input type="number" id="rating" name="rating" />
+            <label>Ratings:</label>
+            <input type="number" id="reviewer_rating" name="rating" />
         </section>
         <section>
-            Title of the review:
-            <input type="text" id="title" name="title" />
+            <label>Title of the review:</label>
+            <input type="text" id="review_title" name="title" />
         </section>
         <section>
-            Your review:
+            <label>Your review:</label>
             <textarea id="review" name="review"></textarea>
         </section>
         <section>
@@ -90,18 +90,18 @@
         <section>
             <label>When did you visit ?</label>
             <select id="visit_month" name="visit_month">
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8" >August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
             </select>
         </section>
         <section>
@@ -119,73 +119,70 @@
                 <label for="like_option4">Ambience</label><input id="like_option4" type="checkbox" name="like_option4" />
             </section>
         </section>
-        <fieldset>
-            <legend>Optional</legend>
-            <section>
-                Length of visit
-                <section class="selction-inputs">
-                    <input type="radio" value="Less than 1 hour" id="Length_option1" name="length-of-visit" />
-                    <label for="Length_option1">Less than 1 hour</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="1-2 hours" id="Length_option2" name="length-of-visit" />
-                    <label for="Length_option2">1-2 hours</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="2-3 hours" id="Length_option3" name="length-of-visit" />
-                    <label for="Length_option3">2-3 hours</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="more than 3 hour" id="Length_option4" name="length-of-visit" />
-                    <label for="Length_option4">more than 3 hour</label>
-                </section>
+        <section>
+            <label>Length of visit</label>
+            <section class="selction-inputs">
+                <input type="radio" value="Less than 1 hour" id="Length_option1" name="visit_length" />
+                <label for="Length_option1">Less than 1 hour</label>
             </section>
-            <section>
-                Is this a place or activity you would suggest the families with kids ?
-                <section class="selction-inputs">
-                    <input type="radio" value="Yes" id="suggest_yes" name="suggest-yesno" />
-                    <label for="suggest_yes">Yes</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="No" id="suggest_no" name="suggest-yesno" />
-                    <label for="suggest_no">No</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="Not sure" id="suggest_not sure" name="suggest-yesno" />
-                    <label for="suggest_not sure">Not sure</label>
-                </section>
+            <section class="selction-inputs">
+                <input type="radio" value="1-2 hours" id="Length_option2" name="visit_length" />
+                <label for="Length_option2">1-2 hours</label>
             </section>
-            <section>
-                Is there food available at this place ?
-                <section class="selction-inputs">
-                    <input type="radio" value="Yes" id="available_yes" name="food_available" />
-                    <label for="available_yes">Yes</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="No" id="available_no" name="food_available" />
-                    <label for="available_no">No</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="Not sure" id="available_not sure" name="food_available" />
-                    <label for="available_not sure">Not sure</label>
-                </section>
+            <section class="selction-inputs">
+                <input type="radio" value="2-3 hours" id="Length_option3" name="visit_length" />
+                <label for="Length_option3">2-3 hours</label>
             </section>
-            <section>
-                Is this attraction available using public transportation ?
-                <section class="selction-inputs">
-                    <input type="radio" value="Yes" id="publictrans_yes" name="public-trans" />
-                    <label for="publictrans_yes">Yes</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="No" id="publictrans_no" name="public-trans" />
-                    <label for="publictrans_no">No</label>
-                </section>
-                <section class="selction-inputs">
-                    <input type="radio" value="Not sure" id="publictrans_not sure" name="public-trans" />
-                    <label for="publictrans_not sure">Not sure</label>
-                </section>
+            <section class="selction-inputs">
+                <input type="radio" value="more than 3 hour" id="Length_option4" name="visit_length" />
+                <label for="Length_option4">more than 3 hour</label>
             </section>
-        </fieldset>
+        </section>
+        <section>
+            <label>Is this a place or activity you would suggest the families with kids ?</label>
+            <section class="selction-inputs">
+                <input type="radio" value="Yes" id="suggest_yes" name="suggest-yesno" />
+                <label for="suggest_yes">Yes</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="No" id="suggest_no" name="suggest-yesno" />
+                <label for="suggest_no">No</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="Not sure" id="suggest_not sure" name="suggest-yesno" />
+                <label for="suggest_not sure">Not sure</label>
+            </section>
+        </section>
+        <section>
+            <label>Is there food available at this place ?</label>
+            <section class="selction-inputs">
+                <input type="radio" value="Yes" id="available_yes" name="food_available" />
+                <label for="available_yes">Yes</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="No" id="available_no" name="food_available" />
+                <label for="available_no">No</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="Not sure" id="available_not sure" name="food_available" />
+                <label for="available_not sure">Not sure</label>
+            </section>
+        </section>
+        <section>
+            <label>Is this attraction available using public transportation ?</label>
+            <section class="selction-inputs">
+                <input type="radio" value="Yes" id="publictrans_yes" name="public-trans" />
+                <label for="publictrans_yes">Yes</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="No" id="publictrans_no" name="public-trans" />
+                <label for="publictrans_no">No</label>
+            </section>
+            <section class="selction-inputs">
+                <input type="radio" value="Not sure" id="publictrans_not sure" name="public-trans" />
+                <label for="publictrans_not sure">Not sure</label>
+            </section>
+        </section>
         <section>
             <input type="submit" class="submit-btn" value="Submit" />
         </section>

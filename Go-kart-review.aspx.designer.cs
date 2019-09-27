@@ -22,40 +22,40 @@ namespace N01363715___Assignment_1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm go_kart_review;
         
         /// <summary>
-        /// name control.
+        /// reviewer_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name;
+        protected global::System.Web.UI.WebControls.TextBox reviewer_name;
         
         /// <summary>
-        /// mail control.
+        /// reviewer_mail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mail;
+        protected global::System.Web.UI.WebControls.TextBox reviewer_mail;
         
         /// <summary>
-        /// rating control.
+        /// reviewer_rating control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rating;
+        protected global::System.Web.UI.WebControls.TextBox reviewer_rating;
         
         /// <summary>
-        /// title control.
+        /// review_title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox title;
+        protected global::System.Web.UI.WebControls.TextBox review_title;
         
         /// <summary>
         /// review control.
@@ -94,22 +94,22 @@ namespace N01363715___Assignment_1 {
         protected global::System.Web.UI.WebControls.CheckBoxList place_attracted;
         
         /// <summary>
-        /// length_of_visit control.
+        /// visit_length control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList length_of_visit;
+        protected global::System.Web.UI.WebControls.RadioButtonList visit_length;
         
         /// <summary>
-        /// Suggest control.
+        /// suggest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Suggest;
+        protected global::System.Web.UI.WebControls.RadioButtonList suggest;
         
         /// <summary>
         /// food_available control.
@@ -121,12 +121,21 @@ namespace N01363715___Assignment_1 {
         protected global::System.Web.UI.WebControls.RadioButtonList food_available;
         
         /// <summary>
-        /// publictrans control.
+        /// public_trans control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList publictrans;
+        protected global::System.Web.UI.WebControls.RadioButtonList public_trans;
+        
+        /// <summary>
+        /// submitbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl submitbox;
     }
 }
